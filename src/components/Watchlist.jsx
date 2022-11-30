@@ -5,7 +5,7 @@ const Watchlist = ({list}) => {
 
     const movieDisplay = list.map((movie) => {
         return <MovieCard 
-        key={movie.title}
+        key={Math.random().toString()}
         movie={movie}/>})
 
     return (

@@ -5,7 +5,7 @@ const MovieScreen = ({addMovie, movieList, page, setPage, list}) => {
 
     const movieDisplay = movieList.map(movie => {
         return <MovieCard 
-        key={movie.title}
+        key={movie.id}
         addMovie={addMovie}
         movie={movie}/>
     })
